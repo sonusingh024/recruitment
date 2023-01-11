@@ -1,0 +1,57 @@
+.navigation {
+  display: none;
+  height: 50vh;
+  overflow: auto;
+  &__card {
+    margin-top: 2rem;
+    &--item {
+      width: 33.33%;
+      padding: 0 16px;
+      padding-bottom: 2rem;
+      h6 {
+        font-family: 'Brygada 1918', serif;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 0.5rem 1rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+      ul {
+        li {
+          a {
+            padding: 0.5rem 1rem;
+            display: block;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+.d-none {
+  display: none;
+}
+.navigation.active {
+  display: block;
+}
+// ---------MEDIA-QUERIES-----------------
+@media (max-width: 990px) {
+  .navigation {
+    &__card {
+      &--item {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navigation {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    &__card {
+      &--item {
+        width: 100%;
+      }
+    }
+  }
+}

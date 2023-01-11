@@ -1,0 +1,55 @@
+.assessment {
+  background-image: url(../images/dots.svg);
+  background-repeat: repeat;
+  background-size: 30px 30px;
+  padding-top: 0;
+  h3 {
+    font-size: 8.75rem;
+    line-height: 1.1;
+    color: #a478aa;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+    transform: translateY(8rem);
+    padding: 1rem;
+  }
+  p.c-bg {
+    z-index: 2;
+    flex: 0 1 50%;
+    position: relative;
+    background-color: #4f2e53;
+    padding: 8rem 3rem 3rem;
+    margin: 1rem;
+    color: #ffd8db;
+    margin-top: 3rem;
+  }
+}
+// -----------------MEDIA-QUERIES-----------------------
+@media(max-width: 992px){
+  .assessment h3{
+    font-size: 7rem;
+    margin-bottom: -3rem;
+  }
+}
+@media(max-width: 960px){
+  .assessment p.c-bg{
+    padding: 6rem 1.5rem 2rem;
+    margin-top: 0;
+  }
+  .d-block{
+    display: block;
+  }
+  .assessment h3{
+    transform: none;
+  }
+}
+@media (max-width: 768px){
+  .assessment h3{
+    font-size: 4rem;
+  }
+}
+@media (max-width: 540px) {
+  .assessment h3{
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $onecolor;
+  &__tittle {
+    h4 {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+  }
+}
+.icon i {
+  padding: 8px;
+  border-radius: 50%;
+  color: #98dee8;
+  background: #40b0bf;
+  font-size: 1.5rem;
+  transition: background 0.3s linear;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  transition: 0.2s;
+  &:hover{
+    opacity: .8;
+  }
+}
+
+// ---------MEDIA-QUERIES-----------------
+@media (max-width: 768px) {
+  .icon {
+    text-align: center;
+  }
+}

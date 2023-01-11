@@ -1,0 +1,56 @@
+.partner {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  &__text {
+    width: 60%;
+    padding: 3.25rem;
+    position: relative;
+    z-index: 2;
+    h3 {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+    }
+  }
+  &__card {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    background-color: $onecolor;
+    .item-content {
+      padding: 3.25rem 3.25rem 2.25rem;
+      p {
+        text-align: left;
+        font-weight: 400;
+      }
+    }
+  }
+}
+// ---------MEDIA-QUERIES-----------------
+@media (max-width: 990px) {
+  .partner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__text {
+      width: 100%;
+      padding: 1rem;
+    }
+    &__card {
+      width: 100%;
+      .item-content {
+        padding: 1rem;
+      }
+    }
+  }
+}
+//   @media (max-width: 768px) {
+//     .card-section {
+//       padding-bottom: 1rem;
+//       padding-top: 1rem;
+//       &__card {
+//         &--carditem {
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }

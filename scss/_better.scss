@@ -1,0 +1,57 @@
+.better {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  &__text {
+    flex: 1 1 50%;
+    position: relative;
+    z-index: 2;
+    padding-right: 2.25rem;
+  }
+  &__img {
+    flex: 1 1 50%;
+    position: relative;
+    z-index: 2;
+    padding-left: 2.25rem;
+    h5 {
+      font-size: 4.4rem;
+      line-height: 1.1;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+    img {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+}
+
+// -------------MEDIA-QUERIES----------------
+@media (max-width: 768px) {
+  .better {
+    padding-top: 0;
+    &__text {
+      flex: 0 0 100%;
+      padding-right: 0;
+    }
+    &__img {
+      flex: 0 0 100%;
+      order: -1;
+      padding-left: 0;
+      h5{
+        font-size: 3.5rem;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+    .better{
+        &__img{
+            h5{
+                font-size: 2.5rem;
+            }
+        }
+    }
+  }
